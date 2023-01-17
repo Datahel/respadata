@@ -3,6 +3,9 @@
 {
 	"name": "Existing Docker compose",
 
+	// Sets the run context to one level up instead of the .devcontainer folder.
+	"context": "../",
+
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 	// "dockerFile": "../Dockerfile",
 	"dockerComposeFile": [
@@ -11,7 +14,7 @@
 
 	"workspaceFolder": "/usr/src/app",
 
-	"service": "respa-api",
+	"service": "api",
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
